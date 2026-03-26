@@ -1,2 +1,1 @@
-Hello from my first Git repo 
-This is my Git practice project 
+Git is a version control system 
