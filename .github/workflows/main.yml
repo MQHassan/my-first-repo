@@ -1,0 +1,24 @@
+name: My First Workflow
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  check-repo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: List all files
+        run: ls -la
+
+      - name: Show Git log
+        run: git log --oneline -5
+
+      - name: Say hello
+        run: echo "Hello from GitHub Actions, M QUAMRUL HASSAN!"
